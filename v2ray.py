@@ -15,10 +15,10 @@ def open_port(port):
         commands.getoutput(x)
 
 def start():
-    os.system("""supervisorctl start v2ray""")
+    os.system("""supervisorctl start v2ray.fun""")
 
 def stop():
-    os.system("""supervisorctl stop v2ray""")
+    os.system("""supervisorctl stop v2ray.fun""")
 
 def write(data):
     data_file = open("/usr/local/V2ray.Fun/panel.config", "w")
